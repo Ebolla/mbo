@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applied loyalty</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/chartist-plugin-tooltip.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.2.0/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="icon-font/style.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/chartist.js"></script>
+    <script src="js/vendor/chartist-plugin-tooltip.js"></script>
+    <script src="js/vendor/chartist-plugin-legend.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap-daterangepicker-master/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/vendor/bootstrap-daterangepicker-master/daterangepicker.css" />
+
+    <link rel="stylesheet" href="js/vendor/bootstrap-select-1.11.2/dist/css/bootstrap-select.min.css">
+    <script src="js/vendor/bootstrap-select-1.11.2/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.2.0/jquery.rateyo.min.js"></script>
+
+    <script src="js/vendor/bootstrap-colorpicker-master/dist/js/bootstrap-colorpicker.min.js"></script>
+    <link rel="stylesheet" href="js/vendor/bootstrap-colorpicker-master/dist/css/bootstrap-colorpicker.min.css">
+</head>
+<body>
+
+<div class="page-container">
+    
+    
+    
+<div class="page-sidebar">
+
+    <div class="branding">
+        <strong class="logo">
+            <a href="index.html">Applied loyalty</a>
+        </strong>
+    </div>
+
+    <a class="toggle-btn">
+        <span class="icon al-icon_sm-arrow-left"></span>
+    </a>
+
+    <nav class="page-nav">
+        <ul class="main-menu">
+            <li class="">
+                <a href="index.html"><span class="icon al-icon_dashboard"></span>Dashboard</a>
+            </li>
+            <li class=" open ">
+                <a href="loyalty-overview.html"><span class="icon al-icon_loyalty"></span>Loyalty</a>
+                <ul>
+                    <li class=""><a href="loyalty-overview.html">Overview</a></li>
+                    <li class=" active "><a href="loyalty-indexes-weight.html">Indexes</a></li>
+                    <li class=""><a href="loyalty-membership.html">Membership</a></li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="campaigns-active.html"><span class="icon al-icon_campaigns"></span>Campaigns</a>
+            </li>
+            <li class="">
+                <a href="#"><span class="icon al-icon_info"></span>Suggestions</a>
+            </li>
+            <li class="">
+                <a href="#"><span class="icon al-icon_analytics"></span>Analytics</a>
+            </li>
+            <li class="">
+                <a href="#"><span class="icon al-icon_audience"></span>Users</a>
+            </li>
+            <li class="">
+                <a href="#"><span class="icon al-icon_surveys"></span>Surveys</a>
+            </li>
+            <li class="">
+                <a href="#"><span class="icon al-icon_optimized-prices"></span>Optimized prices</a>
+            </li>
+        </ul>
+    </nav>
+    
+
+    <footer class="page-footer">
+        <div class="holder">
+            <p>&copy; 2016 - Applied Loyalty</p>
+            <p>Terms and Conditions</p>
+            <p>Give us your feedback</p>
+            <ul class="soc-links">
+                <li><a href="#"><span class="ico al-icon_twitter"></span></a></li>
+                <li><a href="#"><span class="ico al-icon_facebook"></span></a></li>
+                <li><a href="#"><span class="ico al-icon_linkedin"></span></a></li>
+            </ul>
+        </div>
+    </footer>
+
+</div>
+
+
+    <main class="page-content">
+        
+        
+<header class="page-header">
+    <ul class="breadcrumbs">
+        <li><a href="javascript:;"><span class="icon al-icon_twitter-copy"></span> mycompany.com</a></li>
+        
+            <li><a href="loyalty-overview.html"><span class="icon al-icon_sm-arrow-right"></span>Loyalty</a></li>
+        
+
+        
+            <li><span><span class="icon al-icon_sm-arrow-right"></span>Indexes</span></li>
+        
+    </ul>
+    <div class="user-area">
+        <div class="user-data">
+            <img src="img/avatar.jpg" alt="" class="avatar">
+            <strong class="name">Per Andersson</strong>
+            <span class="domain">mycompany.com</span>
+            <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="icon al-icon_sm-arrow-down"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="#" class="btn-logout">
+            <span class="icon al-icon_logout"></span>
+        </a>
+    </div>
+</header>
+
+
+        <div class="main-content">
+            
+            <div class="column col-12 dashboard-header">
+    <header class="flex-row justified align-middle">
+        <h2>Indexes</h2>
+        
+    </header>
+    <div class="clearfix">
+        
+        <p>Welcome to the index page. Here you will find information about the different indexes used for measuring customer loyalty.</p>
+    </div>
+</div>
+
+            <div class="page-section">
+                <div class="column col-8">
+                    <header class="section-heading flex-row justified align-middle">
+                        <h3>Weight</h3>
+                    </header>
+                    <div class="indexes-weight">
+                        <table class="table table-clean">
+                            <thead>
+                                <tr>
+                                    <th class="col-weight"></th>
+                                    <th class="col-rating"></th>
+                                    <th class="col-overall">Overall</th>
+                                    <th class="col-permanent">Permanent</th>
+                                    <th class="col-temp">Temporary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-important"><a href="loyalty-indexes-sei.html">SEI</a></td>
+                                    <td>
+                                        <div class="rating"></div>
+                                    </td>
+                                    <td class="col-overall text-important">40%</td>
+                                    <td class="col-permanent text-muted">70%</td>
+                                    <td class="col-temp text-muted">30%</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-important">CPI</td>
+                                    <td>
+                                        <div class="rating"></div>
+                                    </td>
+                                    <td class="col-overall text-important">30%</td>
+                                    <td class="col-permanent text-muted">45%</td>
+                                    <td class="col-temp text-muted">55%</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-important">PCI</td>
+                                    <td>
+                                        <div class="rating"></div>
+                                    </td>
+                                    <td class="col-overall text-important">10%</td>
+                                    <td class="col-permanent text-muted">15%</td>
+                                    <td class="col-temp text-muted">85%</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-important">CDI</td>
+                                    <td>
+                                        <div class="rating"></div>
+                                    </td>
+                                    <td class="col-overall text-important">20%</td>
+                                    <td class="col-permanent text-muted">15%</td>
+                                    <td class="col-temp text-muted">85%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="clearfix">
+                        <div class="pull-right">
+                            <button class="btn btn-lg btn-transparent"><span class="icon al-icon_close"></span> Cancel</button>
+                            <button class="btn btn-lg btn-primary"><span class="icon al-icon_save"></span> Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-section">
+                <div class="column col-12">
+                    <header class="section-heading flex-row justified align-middle">
+                        <h3>Users per membership</h3>
+                    </header>
+                    <div class="chart-container chart-legend-container chart-loyalty-membership">
+                        <div id="chart-loyalty-membership" class="chart"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    
+    <div class="wizard flex-row justified align-middle">
+    <div class="step-section flex-row align-middle">
+        <strong class="footer-logo"><a href="#">Applied loyalty</a></strong>
+        <div>
+            <strong>Step 3/14:</strong>
+            <h4>Weigth</h4>
+        </div>
+    </div>
+    <div class="caption-section">
+        <p></p>
+        <p><strong class="hint"><span class="icon al-icon_next-step"></span> Next step:</strong> Click ‘SEI’ index in Weight table.</p>
+    </div>
+    <div class="button-section">
+        <a href="loyalty-indexes-sei.html" class="btn btn-custom btn-md">Next step <span class="icon al-icon_next-step"></span></a>
+    </div>
+</div>
+
+    <script src="js/charts-loyalty-indexes.js"></script>
+
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
